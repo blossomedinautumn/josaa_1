@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 20px;
+    padding-left: 100px;
 }
 
 #logo {
@@ -19,11 +19,13 @@ body {
 .section {
     display: flex;
     flex-direction: column;
+    padding-left: 220px;
 }
 .section h3 {
     margin: 0;
     font-size: 20px;
     font-weight: normal;
+    padding-left: 90px;
 }
 
 .section .heading1 {
@@ -169,4 +171,5 @@ body {
 .footer-logo {
     max-height: 50px;
     margin: 0 10px;
+    
 }
