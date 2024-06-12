@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/home.css' %}">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'images/josaa logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+
+    <main class="mainn">
+        <section class="gridd">
+            <div class="box2">
+                <div class="popular">
+                    <h2>Popular Questions</h2>
+                    <h3>Most famous questions on our website</h3>
+                </div>
+                <div class="box3">
+                    <a href="opening_closing.html">
+                        <p>Opening and closing ranks 2023</p>
+                    </a>
+                </div>
+                <div class="box3">
+                    <p>Popular Branches</p>
+                </div>
+                <div class="box3">
+                    <p>Which IITs are preffered by students</p>
+                </div>
+                <div class="box3">
+                    <p>Seat allotments for CSE</p>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="grid grid-cols-1 gap-4 mt-4">
+                    <div class="box">
+                        <a href="{% url 'inst_wise' %}">
+                            <h3 class="heading3">View Institute wise Cut-off</h3>
+                        </a>
+                        <p>View the cut-off data with the selected institutes and further narrow down with your choice
+                            of programs.</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <h3 class="heading3">Analyse Institute wise cut-off trends</h3>
+                        </a>
+                        <p>Institute trends highlight the trends of various programs offered by a particular institute
+                            over the years. This helps understand the popularity and perception of programs offered by
+                            the institute, and thus helps us understand the demand for a particular program in the
+                            institute during the counselling process.</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <h3 class="heading3">Round wise cut-off Analysis</h3>
+                        </a>
+                        <p>Round trends highlight the general trend of closing ranks throughout the rounds of the
+                            counselling process. This helps understand the likely range of changes to the closing ranks
+                            through the counselling process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="light-footer">
+            <div class="footer-links">
+                <a href="#">Copyright Policy</a> /
+                <a href="#">Privacy Policy</a> /
+                <a href="#">Hyperlink Policy</a> /
+                <a href="#">Terms and Conditions</a> /
+                <a href="#">Help</a> /
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'images/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'images/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'images/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
