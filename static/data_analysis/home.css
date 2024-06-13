@@ -15,7 +15,15 @@ body {
     max-height: 100px;
     margin-right: 20px;
 }
-
+.branch-heading{
+    padding-left: 12px;
+}
+.branch-name{
+    padding-left: 20px;
+}
+.branch-info{
+    padding-left: 25px;
+}
 .section {
     display: flex;
     flex-direction: column;
