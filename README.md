@@ -9,12 +9,12 @@ Identify trends in seat allotment patterns.
 
 
 ## Tech Stack/Frameworks:
-- Frontend: HTML, CSS, JavaScript
+- Frontend: HTML, CSS, JavaScript (templates- home.html,about.html static/data_analysis- home.css, about.css)
 * Backend: Django
 + Database: SQLite
-- Data Scraping: Selenium, Beautiful Soup
-* Data Cleaning: NumPy, Pandas
-+ Data Visualization: Chart.js
+- Data Scraping: Selenium, Beautiful Soup (logging_in.py,data_scraping.py)
+* Data Cleaning: NumPy, Pandas (data-2016-2023.csv)
++ Data Visualization: Chart.js (static/data_analysis-script.js)
 
 ## Command to run the project locally
 - python manage.py runserver
@@ -27,19 +27,19 @@ It provides features to:
 - Analyze gender-wise cut-off trends
 - Explore round-wise cut-off analysis
 
-- ![Home page](https://github.com/blossomedinautumn/josaa_1/tree/main/static/images/home-1.png)
+- ![Home page](https://github.com/blossomedinautumn/josaa_1/blob/main/static/images/home.png)
 
 ## View all Institutes
 - Upon clicking this option(General Information of engineering colleges in india), a list of all IITs,NITs,IIITs,and other colleges that take part in JOSAA counselling is shown along with their NIRF Rankings(2023), Location their established year and their official website.
-- ![Institute wise cutoff list](https://github.com/blossomedinautumn/josaa_1/tree/main/static/images/institute-wise.png)
+- ![Institute wise cutoff list](https://github.com/blossomedinautumn/josaa_1/blob/main/static/images/institute-wise.png)
  
 ## View Opening and Closing Ranks of 2023
 - Upon clicking Opening and Closing Ranks 2023 users experience a JOSAA-like user interface which allows them to see opening and closing ranks of all institutes,for all branches,seat type, rounds .
-- ![Opening Closing ranks](https://github.com/blossomedinautumn/josaa_1/tree/main/static/images/or-cr-1.png)
+- ![Opening Closing ranks](https://github.com/blossomedinautumn/josaa_1/blob/main/static/images/or-cr.png)
 
 ## Analyze year wise cut-off trends
 - Yearwise cutoff trends highlight the trends of various programs offered by a particular institute over the years. This helps understand the popularity and perception of programs offered by the institute, and helps us predict the expected cutoff for a given year.
-- ![Year wise trends](https://github.com/blossomedinautumn/josaa_1/tree/main/static/images/year-wise-1.png)
+- ![Year wise trends](https://github.com/blossomedinautumn/josaa_1/blob/main/static/images/year-wise.png)
   
 - Upon selecting the institute, branch and seat category, user will get the detailed year-wise cut-off analysis based on the parameters.
 
@@ -47,7 +47,7 @@ It provides features to:
 - Round trends highlight the general trend of closing ranks throughout the rounds of the counselling process. This helps understand the likely range of changes to the closing ranks throught the counselling proces.
 - Users can get the round wise analysis of any institute by selecting the institute,seat type and branch. 
 - Users will get line graphs depicting the roundwise trends for each year at that institute.
-- ![roundwise trends](https://github.com/blossomedinautumn/josaa_1/tree/main/static/images/round-wise-1.png)
+- ![roundwise trends](https://github.com/blossomedinautumn/josaa_1/blob/main/static/images/round-wise.png)
 
 
 
